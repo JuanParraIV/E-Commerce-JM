@@ -12,7 +12,7 @@ export default {
         hotspot: true,
       }
     },
-    { 
+    {
       name: 'name',
       title: 'Name',
       type: 'string',
