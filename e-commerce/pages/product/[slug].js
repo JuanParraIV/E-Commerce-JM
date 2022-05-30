@@ -15,7 +15,7 @@ const ProductsDetails = ({ product, products }) => {
   const { decQty, incQty, qty, onAdd } = useStateContext();
   return (
     <div>
-      <div className="product-details-container">
+      <div className="product-detail-container">
         <div>
           <div className="image-container">
             <img
