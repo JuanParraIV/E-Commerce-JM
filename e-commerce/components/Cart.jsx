@@ -76,12 +76,12 @@ const Cart = () => {
         <div className="product-container">
           {cartItems.length >= 1 ? (
             <div className="">
-              <span className="heading">Your Cart</span>
+              <span className="heading-cart">Your Cart</span>
               <span className="cart-num-items">({totalQuantities} items)</span>
             </div>
           ) : (
             <div className="hidden">
-              <span className="heading">Your Cart</span>
+              <span className="heading-cart">Your Cart</span>
               <span className="cart-num-items">({totalQuantities} items)</span>
             </div>
           )}
@@ -109,7 +109,7 @@ const Cart = () => {
                         >
                           <AiOutlineMinus />
                         </span>
-                        <span className="num">{item.quantity}</span>
+                        <span className="num-cart">{item.quantity}</span>
                         <span
                           className="plus"
                           onClick={() =>
@@ -135,8 +135,8 @@ const Cart = () => {
         {cartItems.length >= 1 && (
           <div className="cart-bottom">
             <div className="total">
-              <h3>Subtotal:</h3>
-              <h3>${totalPrice}</h3>
+              <h3 className='subtotal'>Subtotal:</h3>
+              <h3 className='totalprice'>${totalPrice}</h3>
             </div>
             <div className="btn-container">
               <button className="btn" type="button" onClick={handleCheckout}>

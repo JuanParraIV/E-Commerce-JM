@@ -37,7 +37,7 @@ const Success = () => {
             Continue Shopping
           </button>
         </Link>
-      </div> 
+      </div>
     </div>
   );
 };
